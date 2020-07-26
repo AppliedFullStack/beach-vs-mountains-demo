@@ -1,0 +1,54 @@
+
+<div class='welcome'>
+  <h2>Hello there!</h2>
+  <p>What do you like better?</p>
+  <a href="javascript: showBeach()">Beach</a>
+  <a href="javascript: showMountains()">Mountains</a>
+</div>
+<div class='beach'>
+  <h2>Beaches!</h2>
+  <p>I see that you are an active and higly energetic person!</p>
+  <a href="javascript: showHome()">Back</a>
+</div>
+<div class='mountains'>
+  <h2>Mountains!</h2>
+  <p>I see that you are a balanced traveler who loves to be around nature!</p>
+  <a href="javascript: showHome()">Back</a>
+</div>
+<style>
+  .beach, .mountains {
+    display: none;
+  }
+
+  h2 {
+    font-size: 40px;
+    color: Gray;
+  }
+
+  p {
+    font-size: 20px;
+    color: Gray;
+  }
+
+  a {
+    font-size: 20px;
+    color: Tan;
+  }
+</style>
+<script>
+  function showHome() {
+        document.querySelector('.beach').style.display = 'none';
+        document.querySelector('.mountains').style.display = 'none';
+        document.querySelector('.welcome').style.display = 'block';
+      }
+
+      function showBeach() {
+        document.querySelector('.welcome').style.display = 'none';
+        document.querySelector('.beach').style.display = 'block';
+      }
+
+      function showMountains() {
+        document.querySelector('.welcome').style.display = 'none';
+        document.querySelector('.mountains').style.display = 'block';
+      }
+</script>
