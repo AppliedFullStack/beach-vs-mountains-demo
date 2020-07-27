@@ -2,18 +2,18 @@
 <div class='welcome'>
   <h2>Hello there!</h2>
   <p>What do you like better?</p>
-  <a href="javascript: showBeach()">Beach</a>
-  <a href="javascript: showMountains()">Mountains</a>
+  <button onclick="showBeach()">Beach</button>
+  <button onclick="showMountains()">Mountains</button>
 </div>
 <div class='beach'>
   <h2>Beaches!</h2>
   <p>I see that you are an active and higly energetic person!</p>
-  <a href="javascript: showHome()">Back</a>
+  <button onclick="showHome()">Back</button>
 </div>
 <div class='mountains'>
   <h2>Mountains!</h2>
   <p>I see that you are a balanced traveler who loves to be around nature!</p>
-  <a href="javascript: showHome()">Back</a>
+  <button onclick="showHome()">Back</button>
 </div>
 <style>
   .beach, .mountains {
@@ -30,9 +30,9 @@
     color: Gray;
   }
 
-  a {
-    font-size: 20px;
-    color: Tan;
+  button {
+    background-color: Tan;
+    color: white;
   }
 </style>
 <script>
